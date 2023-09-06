@@ -2,6 +2,6 @@
   "name": "books",
   "version": "1.0.0",
   "dependencies": {
-    "package-name": "books"
-  }
+ "engines": {
+  "npm": "7.x"
 }
