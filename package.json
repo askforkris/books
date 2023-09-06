@@ -1,6 +1,7 @@
 {
   "name": "images",
   "version": "1.0.0",
-  "dependencies": version {
+  "dependencies": {
+    "package-name": "version"
   }
 }
