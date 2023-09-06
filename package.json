@@ -1,5 +1,6 @@
 {
   "name": "books",
+  "description": app for books
   "version": "1.0.0",
   "dependencies": {
  "engines": {
