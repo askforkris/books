@@ -1,4 +1,5 @@
-   function showOverlay(epubPath) {
+<script>
+    function showOverlay(epubPath) {
         // Set the download link href to the ePub file path
         document.getElementById('downloadLink').href = epubPath;
 
