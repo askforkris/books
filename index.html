@@ -8,28 +8,26 @@
     <!-- Your HTML content here -->
 
 <div class="dropdown">
-    <img src="Astro.png" alt="Image 2" width="150" height="150" onclick="showOverlay('Astro1.epub', 'Astro2.epub', '3001.epub')">
+    <img src="Astro.png" alt="Image 2" width="150" height="150" onclick="showOverlay('Astro.epub')">
     <div class="dropdown-content">
-<div class="dropdown">
-    <img src="ciany.png" alt="Image 4" onclick="showOverlay('ciany.epub', 'Image 4 Bio')">
+        <img src="Ciany.png" alt="Image 2" width="150" height="150" onclick="showOverlay('Ciany.epub')">
+        <img src="image3.jpg" alt="Image 3" onclick="showOverlay('image3.epub')">
+        <img src="image4.jpg" alt="Image 4" onclick="showOverlay('image4.epub')">
+    </div>
 </div>
 
-<!-- Overlay for displaying bio and download link for Image 4 -->
-<div class="overlay" id="imageOverlay4">
+<!-- Overlay for displaying bio and download link -->
+<div class="overlay" id="imageOverlay">
     <div class="overlay-content">
         <h2>Bio</h2>
         <p>
-          A girl from Colombia with a horrendous past that comes to America for asylum and a better future.
-            Specific details go into the life of a drug cartel living in Harlem. 
-            The second book written by Kriston Gooden. It ventures off into pulp urban fiction.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sit amet quam velit. Nulla ut magna lobortis,
+            egestas erat quis, aliquet est. Sed vel massa a felis imperdiet ultricies. Duis vel auctor arcu.
         </p>
-        <a class="download-link" id="downloadLink4" href="#" download>Download ePub</a>
-        <button onclick="hideOverlay('imageOverlay4')">Close</button>
+        <a class="download-link" id="downloadLink" href="#" download>Download ePub</a>
+        <button onclick="hideOverlay()">Close</button>
     </div>
-</div>
-    
-    </div>
-<!-- Overlay for displaying bio and download link -->
+
 <div class="overlay" id="imageOverlay">
     <div class="overlay-content">
         <h2>Bio</h2>
