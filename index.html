@@ -1,62 +1,23 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Image and Bio Section</title>
-    <style>
-        body {
-            padding: 10px;
-            margin: 10px;
-        }
-
-        .dropdown {
-            position: relative;
-            display: inline-block;
-        }
-
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: #f9f9f9;
-            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-            padding: 12px 16px;
-        }
-
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
-
-        img {
-            padding: 10px;
-            margin: 10px;
-            cursor: pointer;
-        }
-
-        /* Style for the overlay containing the bio and download link */
-        .overlay {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.7);
-            z-index: 2;
-        }
-
-        /* Style for the content within the overlay */
-        .overlay-content {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            background-color: white;
-            padding: 20px;
-            text-align: center;
-        }
-
-        /* Style for the download link */
-        .download-link {
-            margin-top: 20px;
-        }
-    </style>
 </head>
+<body>
+<div class="dropdown">
+    <img src="Astro.png" alt="Image 2" width="150" height="150" onclick="showOverlay('3001.epub')">
+    <div class="dropdown-content">
+        <img src="Ciany.png" alt="Image 2" width="150" height="150" onclick="showOverlay('Ciany.epub')">
+        <img src="image3.jpg" alt="Image 3" onclick="showOverlay('image3.epub')">
+        <img src="image4.jpg" alt="Image 4" onclick="showOverlay('image4.epub')">
+    </div>
+</div>
+
+<!-- Overlay for displaying bio and download link -->
+<div class="overlay" id="imageOverlay">
+    <div class="overlay-content">
+        <h2>Bio</h2>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sit amet quam velit. Nulla ut magna lobortis,
+            egestas erat quis, aliquet est. Sed vel massa a felis imperdiet ultricies. Duis vel auctor arcu.
+        </p>
+        <a class="download-link" id="downloadLink" href="#" download>Download ePub</a>
+        <button onclick="hideOverlay()">Close</button>
+    </div>
+</div>
