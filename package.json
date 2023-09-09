@@ -1,8 +1,14 @@
 {
-  "name": "books",
-  "description": app for books
+  "name": "image-bio-section",
   "version": "1.0.0",
-  "dependencies": {
- "engines": {
-  "npm": "7.x"
+  "description": "Image and Bio Section Example",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx http-server -c-1"
+  },
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "http-server": "^0.12.3"
+  }
 }
