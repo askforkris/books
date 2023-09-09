@@ -1,17 +1,10 @@
-<script>
-    function showOverlay(epubPath) {
-        // Set the download link href to the ePub file path
-        document.getElementById('downloadLink').href = epubPath;
+function showOverlay() {
+    var epubPath = 'Ciany.epub';
 
-        // Show the overlay
-        document.getElementById('imageOverlay').style.display = 'block';
-    }
+    // Set the download link href to the ePub file path
+    document.getElementById('downloadLink').href = epubPath;
 
-    function hideOverlay() {
-        // Hide the overlay
-        document.getElementById('imageOverlay').style.display = 'none';
-    }
-</script>
+    // Show the overlay
+    document.getElementById('imageOverlay').style.display = 'block';
+}
 
-</body>
-</html>
