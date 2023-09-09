@@ -1,24 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image and Bio Section</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="dropdown">
-    <img src="Astro.png" alt="Image 2" width="150" height="150" onclick="showOverlay('3001.epub')">
-    <div class="dropdown-content">
-        <img src="Ciany.png" alt="Image 2" width="150" height="150" onclick="showOverlay('Ciany.epub')">
-        <img src="image3.jpg" alt="Image 3" onclick="showOverlay('image3.epub')">
-        <img src="image4.jpg" alt="Image 4" onclick="showOverlay('image4.epub')">
+    <div class="dropdown">
+        <img src="Astro.png" alt="Image 2" width="150" height="150" onclick="showOverlay('Astro.epub')">
+        <div class="dropdown-content">
+            <img src="Ciany.png" alt="Image 2" width="150" height="150" onclick="showOverlay('Ciany.epub')">
+            <img src="image3.jpg" alt="Image 3" onclick="showOverlay('image3.epub')">
+            <img src="image4.jpg" alt="Image 4" onclick="showOverlay('image4.epub')">
+        </div>
     </div>
-</div>
 
-<!-- Overlay for displaying bio and download link -->
-<div class="overlay" id="imageOverlay">
-    <div class="overlay-content">
-        <h2>Bio</h2>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sit amet quam velit. Nulla ut magna lobortis,
-            egestas erat quis, aliquet est. Sed vel massa a felis imperdiet ultricies. Duis vel auctor arcu.
-        </p>
-        <a class="download-link" id="downloadLink" href="#" download>Download ePub</a>
-        <button onclick="hideOverlay()">Close</button>
+    <!-- Overlay for displaying bio and download link -->
+    <div class="overlay" id="imageOverlay">
+        <div class="overlay-content">
+            <h2>Bio</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sit amet quam velit. Nulla ut magna lobortis,
+                egestas erat quis, aliquet est. Sed vel massa a felis imperdiet ultricies. Duis vel auctor arcu.
+            </p>
+            <a class="download-link" id="downloadLink" href="#" download>Download ePub</a>
+            <button onclick="hideOverlay()">Close</button>
+        </div>
     </div>
-</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
 
