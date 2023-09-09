@@ -10,11 +10,22 @@
 <div class="dropdown">
     <img src="Astro.png" alt="Image 2" width="150" height="150" onclick="showOverlay('Astro1.epub', 'Astro2.epub', '3001.epub')">
     <div class="dropdown-content">
-        <img src="Ciany.png" alt="Image 2" width="150" height="150" onclick="showOverlay('Ciany.epub')">
-        <img src="image3.jpg" alt="Image 3" onclick="showOverlay('image3.epub')">
-        <img src="image4.jpg" alt="Image 4" onclick="showOverlay('image4.epub')">
+<div class="dropdown">
+    <img src="image4.jpg" alt="Image 4" onclick="showOverlay('image4.epub', 'Image 4 Bio')">
+</div>
+
+<!-- Overlay for displaying bio and download link for Image 4 -->
+<div class="overlay" id="imageOverlay4">
+    <div class="overlay-content">
+        <h2>Bio</h2>
+        <p>
+            Image 4 Bio Content Goes Here.
+        </p>
+        <a class="download-link" id="downloadLink4" href="#" download>Download ePub</a>
+        <button onclick="hideOverlay('imageOverlay4')">Close</button>
     </div>
 </div>
+
     
     </div>
 <!-- Overlay for displaying bio and download link -->
