@@ -1,14 +1,6 @@
 {
-  "name": "image-bio-section",
+  "name": "images",
   "version": "1.0.0",
-  "description": "Image and Bio Section Example",
-  "main": "index.html",
-  "scripts": {
-    "start": "npx http-server -c-1"
-  },
-  "author": "Your Name",
-  "license": "MIT",
-  "devDependencies": {
-    "http-server": "^0.12.3"
+  "dependencies": {
   }
 }
