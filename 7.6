@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image and Bio Section</title>
+    <style>
+        body {
+            padding: 10px;
+            margin: 10px;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            padding: 12px 16px;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        img {
+            padding: 10px;
+            margin: 10px;
+            cursor: pointer;
+        }
+
+        /* Style for the overlay containing the bio and download link */
+        .overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            z-index: 2;
+        }
+
+        /* Style for the content within the overlay */
+        .overlay-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Style for the download link */
+        .download-link {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+<div class="dropdown">
+    <img src="Astro.png" alt="Image 2" width="150" height="150" onclick="showOverlay(0)">
+    <div class="dropdown-content">
+        <img src="Ciany.png" alt="Image 2" width="150" height="150" onclick="showOverlay(1)">
+        <img src="image3.jpg" alt="Image 3" onclick="showOverlay(2)">
+        <img src="image4.jpg" alt="Image 4" onclick="showOverlay(3)">
+    </div>
+</div>
+
+<!-- Overlay for displaying bio and download link -->
+<div class="overlay" id="imageOverlay">
+    <div class="overlay-content">
+        <h2>Bio</h2>
+        <p id="bioText">
+            <!-- Bio content will be dynamically loaded here -->
+        </p>
+        <a class="download-link" id="downloadLink" href="#" download>Download ePub</a>
+        <button onclick="hideOverlay()">Close</button>
+    </div>
+</div>
+
+<script>
+    const bios = [
+        {
+            text: "Bio for Astro: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sit amet quam velit. Nulla ut magna lobortis, egestas erat quis, aliquet est. Sed vel massa a felis imperdiet ultricies. Duis vel auctor arcu.",
+            epubPath: '3001.epub'
+        },
+        {
+            text: "Bio for Ciany: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sit amet quam velit. Nulla ut magna lobortis, egestas erat quis, aliquet est. Sed vel massa a felis imperdiet ultricies. Duis vel auctor arcu.",
+            epubPath: 'Ciany.epub'
+        },
+        {
+            text: "Bio for Image 3: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sit amet quam velit. Nulla ut magna lobortis, egestas erat quis, aliquet est. Sed vel massa a felis imperdiet ultricies. Duis vel auctor arcu.",
+            epubPath: 'image3.epub'
+        },
+        {
+            text: "Bio for Image 4: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sit amet quam velit. Nulla ut magna lobortis, egestas erat quis, aliquet est. Sed vel massa a felis imperdiet ultricies. Duis vel auctor arcu.",
+            epubPath: 'image4.epub'
+        }
+    ];
+
+    function showOverlay(index) {
+        // Set the bio text and download link href based on the selected index
+        document.getElementById('bioText').textContent = bios[index].text;
+        document.getElementById('downloadLink').href = bios[index].epubPath;
+
+        // Show the overlay
+        document.getElementById('imageOverlay').style.display = 'block';
+    }
+
+    function hideOverlay() {
+        // Hide the overlay
+        document.getElementById('imageOverlay').style.display = 'none';
+    }
+</script>
+
+</body>
+</html>
